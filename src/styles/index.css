@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+.register-bg {
+  background-image: url("@/assets/register-bg.svg");
+  background-size: cover;
+}

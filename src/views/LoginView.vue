@@ -64,6 +64,10 @@
               <span v-else>¡ENTRA!</span>
             </button>
           </div>
+
+          <router-link to="/register">
+            <div class="text-center text-[#E40D1D]">Registrarme</div>
+          </router-link>
         </Form>
       </div>
     </div>
