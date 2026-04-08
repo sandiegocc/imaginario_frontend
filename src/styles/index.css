@@ -4,3 +4,8 @@
   background-image: url("@/assets/register-bg.svg");
   background-size: cover;
 }
+
+.ranking-bg {
+  background-image: url("@/assets/ranking-bg.svg");
+  background-size: cover;
+}
