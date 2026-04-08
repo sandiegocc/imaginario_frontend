@@ -4,7 +4,7 @@
       <img class="w-full" src="@/assets/hola-amiguito.svg" alt="Hola Amiguito" />
     </div>
 
-    <div class="py-8 px-4 shadow rounded-4xl bg-white mx-4">
+    <div class="py-8 px-4 shadow rounded-t-4xl bg-white mx-4">
       <div
         v-if="loginError"
         class="mb-4 bg-red-50 border-l-4 border-red-400 p-4 text-red-700 text-sm"
@@ -14,63 +14,63 @@
 
       <Form @submit="onSubmit" v-slot="{ errors }" class="space-y-6">
         <div>
-          <label for="documentId" class="block text-sm font-medium text-gray-700"
+          <label for="fullName" class="block text-sm font-medium text-gray-700"
             >Nombre del papá / mamá
           </label>
           <div class="mt-1 relative">
             <Field
-              id="documentId"
-              name="documentId"
+              id="fullName"
+              name="fullName"
               type="text"
-              rules="required|numeric|min:5"
+              rules="required"
               class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               :class="{
-                'border-red-300': errors.documentId,
-                'border-gray-300': !errors.documentId,
+                'border-red-300': errors.fullName,
+                'border-gray-300': !errors.fullName,
               }"
               placeholder="Ej: María Rodriguez"
             />
           </div>
-          <ErrorMessage name="documentId" class="mt-1 text-xs text-red-600" />
+          <ErrorMessage name="fullName" class="mt-1 text-xs text-red-600" />
         </div>
 
         <div>
-          <label for="documentId" class="block text-sm font-medium text-gray-700"
+          <label for="child" class="block text-sm font-medium text-gray-700"
             >Nombre del niño
           </label>
           <div class="mt-1 relative">
             <Field
-              id="documentId"
-              name="documentId"
+              id="child"
+              name="child"
               type="text"
-              rules="required|numeric|min:5"
+              rules="required"
               class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               :class="{
-                'border-red-300': errors.documentId,
-                'border-gray-300': !errors.documentId,
+                'border-red-300': errors.child,
+                'border-gray-300': !errors.child,
               }"
               placeholder="Ej: Samuel"
             />
           </div>
-          <ErrorMessage name="documentId" class="mt-1 text-xs text-red-600" />
+          <ErrorMessage name="child" class="mt-1 text-xs text-red-600" />
         </div>
 
         <div>
-          <label for="whatsapp" class="block text-sm font-medium text-gray-700"
+          <label for="email" class="block text-sm font-medium text-gray-700"
             >Correo electrónico</label
           >
           <div class="mt-1 relative">
             <Field
-              id="whatsapp"
-              name="whatsapp"
-              type="tel"
-              rules="required|numeric|min:10"
+              id="email"
+              name="email"
+              type="email"
+              rules="required"
               class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-              :class="{ 'border-red-300': errors.whatsapp, 'border-gray-300': !errors.whatsapp }"
+              :class="{ 'border-red-300': errors.email, 'border-gray-300': !errors.email }"
               placeholder="Ej: roberto@gmail.com"
             />
           </div>
-          <ErrorMessage name="whatsapp" class="mt-1 text-xs text-red-600" />
+          <ErrorMessage name="email" class="mt-1 text-xs text-red-600" />
         </div>
 
         <div>
@@ -90,7 +90,7 @@
         </div>
 
         <div>
-          <label for="documentId" class="block text-sm font-medium text-gray-700"> Cédula </label>
+          <label for="documentId" class="block text-sm font-medium text-gray-700">Cédula</label>
           <div class="mt-1 relative">
             <Field
               id="documentId"
@@ -129,10 +129,10 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 import { Form, Field, ErrorMessage } from 'vee-validate'
+import { useAuthStore } from '@/stores/auth'
 import axios from 'axios'
-import { useAuthStore } from '@/stores/auth' // Importamos el store
-import { useRouter } from 'vue-router' // Para redirigir
 
 const authStore = useAuthStore()
 const router = useRouter()
@@ -145,9 +145,12 @@ const onSubmit = async (values: any) => {
   isLoading.value = true
 
   try {
-    const response = await axios.post('http://localhost:3000/auth/login', {
+    const response = await axios.post('http://localhost:3000/imaginario', {
+      email: values.email,
       whatsapp: values.whatsapp,
       documentId: values.documentId,
+      fullName: values.fullName,
+      child: values.child,
     })
 
     // Guardamos en Pinia (esto también guarda en localStorage por la acción setAuth)
@@ -159,9 +162,8 @@ const onSubmit = async (values: any) => {
     // Redirigir al ranking o al home
     router.replace('/events')
   } catch (error: any) {
-    console.error(error)
-    if (error.response?.status === 401) {
-      loginError.value = 'El teléfono o el documento son incorrectos.'
+    if (error.response?.status === 409) {
+      loginError.value = error.response?.data.message
     } else {
       loginError.value = 'Hubo un error de conexión.'
     }
