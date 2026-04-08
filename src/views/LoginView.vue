@@ -1,10 +1,10 @@
 <template>
   <div class="min-h-screen bg-[#F4B822] flex flex-col justify-center">
-    <div class="flex flex-col items-center justify-center sm:mx-auto sm:w-full">
+    <div class="flex flex-col items-center justify-center sm:mx-auto sm:w-full mt-4">
       <img class="w-[80%]" src="@/assets/imaginario-logo.svg" alt="Imaginario Logo" />
     </div>
 
-    <div class="bg-[#E40D1D] rounded-4xl flex flex-col py-10 px-8 -mt-2 mx-4">
+    <div class="bg-[#E40D1D] rounded-t-4xl flex flex-col py-10 px-8 -mt-2">
       <div class="flex flex-col items-center justify-center gap-4 mb-6">
         <img class="w-full" src="@/assets/imaginario-logo-2.svg" alt="Imaginario Logo 2" />
         <img class="w-[60%]" src="@/assets/sandiego-logo.svg" alt="Sandiego Logo" />
