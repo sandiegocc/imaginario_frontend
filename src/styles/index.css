@@ -9,3 +9,14 @@
   background-image: url("@/assets/ranking-bg.svg");
   background-size: cover;
 }
+
+.success-bg {
+  background-image: url("@/assets/success-bg.svg");
+}
+
+.pintura-bg {
+  background-image: url("/assets/helado.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

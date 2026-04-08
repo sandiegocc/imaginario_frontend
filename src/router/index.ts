@@ -40,6 +40,11 @@ const router = createRouter({
           component: () => import('@/views/EventsView.vue'),
         },
         {
+          path: 'events/success',
+          name: 'eventSuccess',
+          component: () => import('@/views/SuccessView.vue'),
+        },
+        {
           path: 'events/:id', // Se convierte en /events/:id
           name: 'eventDetail',
           component: () => import('@/views/EventDetailView.vue'),

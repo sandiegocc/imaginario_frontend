@@ -47,10 +47,18 @@
       </router-link>
     </div>
   </div>
+
+  <div class="flex items-center justify-center my-4">
+    <button class="bg-black text-white px-4 py-2 rounded" @click="logout">Cerrar sesión</button>
+  </div>
 </template>
 
 <script lang="ts" setup>
 import { useAuthStore } from '@/stores/auth.ts'
+const router = useRouter()
+import { useRouter } from 'vue-router'
+import { onMounted } from 'vue'
+import api from '@/api/axios.ts'
 
 const authStore = useAuthStore()
 
@@ -154,4 +162,20 @@ const events = [
     url: 'caricaturas-en-familia',
   },
 ]
+
+const logout = () => {
+  authStore.logout()
+  router.replace('/login')
+}
+
+onMounted(async () => {
+  const request = {
+    method: 'GET',
+    url: '/imaginario/user',
+  }
+
+  const response = await api(request)
+
+  authStore.user = response.data.user
+})
 </script>

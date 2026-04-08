@@ -32,6 +32,16 @@
         </div>
       </div>
     </div>
+
+    <div class="flex justify-center items-center">
+      <router-link to="/events" replace>
+        <button
+          class="bg-[#f4b922] uppercase text-white font-bold text-xl px-8 py-1 rounded mt-4 cursor-pointer"
+        >
+          Eventos
+        </button>
+      </router-link>
+    </div>
   </div>
 </template>
 
