@@ -79,7 +79,8 @@ import { ref } from 'vue'
 import { Form, Field, ErrorMessage } from 'vee-validate'
 import axios from 'axios'
 import { useAuthStore } from '@/stores/auth' // Importamos el store
-import { useRouter } from 'vue-router' // Para redirigir
+import { useRouter } from 'vue-router'
+import api from '@/api/axios.ts' // Para redirigir
 
 const authStore = useAuthStore()
 const router = useRouter()
@@ -92,16 +93,20 @@ const onSubmit = async (values: any) => {
   isLoading.value = true
 
   try {
-    const response = await axios.post('http://localhost:3000/auth/login', {
-      whatsapp: values.whatsapp,
-      documentId: values.documentId,
-    })
+    const request = {
+      method: 'POST',
+      url: 'auth/login',
+      data: {
+        whatsapp: values.whatsapp,
+        documentId: values.documentId,
+      },
+    }
+
+    const response = await api(request)
 
     // Guardamos en Pinia (esto también guarda en localStorage por la acción setAuth)
     const { token, user } = response.data
     authStore.setAuth(token, user)
-
-    console.log('Sesión iniciada:', authStore.user?.fullName)
 
     // Redirigir al ranking o al home
     router.replace('/events')

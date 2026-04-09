@@ -133,6 +133,7 @@ import { useRouter } from 'vue-router'
 import { Form, Field, ErrorMessage } from 'vee-validate'
 import { useAuthStore } from '@/stores/auth'
 import axios from 'axios'
+import api from '@/api/axios.ts'
 
 const authStore = useAuthStore()
 const router = useRouter()
@@ -145,21 +146,23 @@ const onSubmit = async (values: any) => {
   isLoading.value = true
 
   try {
-    const response = await axios.post('http://localhost:3000/imaginario', {
-      email: values.email,
-      whatsapp: values.whatsapp,
-      documentId: values.documentId,
-      fullName: values.fullName,
-      child: values.child,
-    })
+    const request = {
+      method: 'POST',
+      url: 'imaginario',
+      data: {
+        email: values.email,
+        whatsapp: values.whatsapp,
+        documentId: values.documentId,
+        fullName: values.fullName,
+        child: values.child,
+      },
+    }
 
-    // Guardamos en Pinia (esto también guarda en localStorage por la acción setAuth)
+    const response = await api(request)
+
     const { token, user } = response.data
     authStore.setAuth(token, user)
 
-    console.log('Sesión iniciada:', authStore.user?.fullName)
-
-    // Redirigir al ranking o al home
     router.replace('/events')
   } catch (error: any) {
     if (error.response?.status === 409) {
