@@ -19,7 +19,7 @@
           <div class="flex justify-between">
             <div class="flex justify-start items-end gap-2">
               <span class="font-bold text-3xl">{{ authStore?.user?.events.length || 0 }}</span>
-              <p>Estrellas</p>
+              <p>Estrellitas</p>
             </div>
             <img class="w-[20%]" src="@/assets/estrella-amarilla.svg" alt="Estella" />
           </div>
