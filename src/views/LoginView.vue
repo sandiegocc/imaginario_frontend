@@ -4,12 +4,12 @@
       <img src="@/assets/login-header.png" alt="" />
     </div>
 
-    <div class="flex flex-col flex-1 rounded-t-4xl py-10 px-8 rounded-t-4xl border-x-2 border-t-2 border-[#197FC3]">
+    <div class="flex flex-col flex-1 rounded-t-4xl py-10 px-8">
       <div class="flex flex-col items-center justify-center gap-4 mb-6">
-        <img class="w-[80%]" src="@/assets/login-logo.svg" alt="Imaginario Logo 2" />
+        <img class="w-[60%]" src="@/assets/login-logo.svg" alt="Imaginario Logo 2" />
       </div>
 
-      <div class="py-8 px-4 shadow rounded-4xl border-2 border-[#197FC3]">
+      <div class="py-8 px-4 rounded-4xl border-2 border-[#f70028]">
         <div
           v-if="loginError"
           class="mb-4 bg-red-50 border-l-4 border-red-400 p-4 text-red-700 text-sm"
@@ -19,14 +19,14 @@
 
         <Form @submit="onSubmit" v-slot="{ errors }" class="space-y-6">
           <div>
-            <label for="documentId" class="block text-sm font-black text-gray-700"> Cédula </label>
+            <label for="documentId" class="block text-sm font-black text-black"> Cédula </label>
             <div class="mt-1 relative">
               <Field
                 id="documentId"
                 name="documentId"
                 type="text"
                 rules="required|numeric|min:5"
-                class="bg-[#197FC3] appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-white text-white focus:outline-none sm:text-sm"
+                class="border-2 bg-white appearance-none block w-full px-3 py-2 rounded-md focus:outline-none sm:text-sm"
                 :class="{
                   'border-red-300': errors.documentId,
                   'border-gray-300': !errors.documentId,
@@ -38,14 +38,14 @@
           </div>
 
           <div>
-            <label for="whatsapp" class="block text-sm font-black text-gray-700"> Celular </label>
+            <label for="whatsapp" class="block text-sm font-black text-black"> Celular </label>
             <div class="mt-1 relative">
               <Field
                 id="whatsapp"
                 name="whatsapp"
                 type="tel"
                 rules="required|numeric|min:10"
-                class="bg-[#197FC3] appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-white text-white focus:outline-none sm:text-sm"
+                class="border-2 bg-white appearance-none block w-full px-3 py-2 rounded-md focus:outline-none sm:text-sm"
                 :class="{ 'border-red-300': errors.whatsapp, 'border-gray-300': !errors.whatsapp }"
                 placeholder="Ej: 3001234567"
               />
@@ -57,7 +57,7 @@
             <button
               type="submit"
               :disabled="isLoading"
-              class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-2xl font-bold text-white bg-[#197FC3] focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-2xl font-bold text-white bg-[#f70028] focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <span v-if="isLoading">Cargando...</span>
               <span v-else>¡ENTRA!</span>
