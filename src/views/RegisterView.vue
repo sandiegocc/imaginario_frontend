@@ -40,22 +40,22 @@
           </div>
 
           <div>
-            <label for="child" class="block text-sm font-black text-black">Nombre del niño </label>
+            <label for="team" class="block text-sm font-black text-black">Nombra a tu equipo </label>
             <div class="mt-1 relative">
               <Field
-                id="child"
-                name="child"
+                id="team"
+                name="team"
                 type="text"
                 rules="required"
                 class="border-2 bg-white appearance-none block w-full px-3 py-2 rounded-md focus:outline-none sm:text-sm"
                 :class="{
-                  'border-red-300': errors.child,
-                  'border-gray-300': !errors.child,
+                  'border-red-300': errors.team,
+                  'border-gray-300': !errors.team,
                 }"
-                placeholder="Ej: Samuel"
+                placeholder="Ej: Los Fantasticos"
               />
             </div>
-            <ErrorMessage name="child" class="mt-1 text-xs text-red-600" />
+            <ErrorMessage name="team" class="mt-1 text-xs text-red-600" />
           </div>
 
           <div>
@@ -70,7 +70,7 @@
                 rules="required"
                 class="border-2 bg-white appearance-none block w-full px-3 py-2 rounded-md focus:outline-none sm:text-sm"
                 :class="{ 'border-red-300': errors.email, 'border-gray-300': !errors.email }"
-                placeholder="Ej: roberto@gmail.com"
+                placeholder="Ej: maria@gmail.com"
               />
             </div>
             <ErrorMessage name="email" class="mt-1 text-xs text-red-600" />
@@ -157,7 +157,7 @@ const onSubmit = async (values: any) => {
         whatsapp: values.whatsapp,
         documentId: values.documentId,
         fullName: values.fullName,
-        child: values.child,
+        team: values.team,
       },
     }
 

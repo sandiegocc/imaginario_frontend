@@ -7,7 +7,7 @@ interface User {
   email: string;
   whatsapp: string;
   fullName: string;
-  child: string;
+  team: string;
   events: string[];
 }
 

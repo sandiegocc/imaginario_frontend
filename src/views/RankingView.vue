@@ -20,9 +20,9 @@
           <div
             class="bg-[#e6aa16] text-2xl text-white min-w-8 min-h-8 rounded-full text-center flex items-center justify-center"
           >
-            {{ rank.child[0] }}
+            {{ rank.team[0] }}
           </div>
-          <span class="text-2xl">{{ rank.child }}</span>
+          <span class="text-2xl">{{ rank.team }}</span>
         </div>
 
         <div class="flex items-center text-2xl gap-2">
