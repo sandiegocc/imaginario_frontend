@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+.login-bg {
+  background-image: url("@/assets/login-bg.png");
+  background-size: cover;
+}
+
 .register-bg {
   background-image: url("@/assets/register-bg.svg");
   background-size: cover;

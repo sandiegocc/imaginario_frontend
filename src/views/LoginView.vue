@@ -1,16 +1,15 @@
 <template>
-  <div class="min-h-screen bg-[#F4B822] flex flex-col justify-center">
-    <div class="flex flex-col items-center justify-center sm:mx-auto sm:w-full mt-4">
-      <img class="w-[80%]" src="@/assets/imaginario-logo.svg" alt="Imaginario Logo" />
+  <div class="min-h-screen flex flex-col login-bg">
+    <div class="flex flex-col items-center justify-center sm:mx-auto sm:w-full">
+      <img src="@/assets/login-header.png" alt="" />
     </div>
 
-    <div class="bg-[#E40D1D] rounded-t-4xl flex flex-col py-10 px-8 -mt-2">
+    <div class="flex flex-col flex-1 rounded-t-4xl py-10 px-8 rounded-t-4xl border-x-2 border-t-2 border-[#197FC3]">
       <div class="flex flex-col items-center justify-center gap-4 mb-6">
-        <img class="w-full" src="@/assets/imaginario-logo-2.svg" alt="Imaginario Logo 2" />
-        <img class="w-[60%]" src="@/assets/sandiego-logo.svg" alt="Sandiego Logo" />
+        <img class="w-[80%]" src="@/assets/login-logo.svg" alt="Imaginario Logo 2" />
       </div>
 
-      <div class="py-8 px-4 shadow rounded-4xl bg-white">
+      <div class="py-8 px-4 shadow rounded-4xl border-2 border-[#197FC3]">
         <div
           v-if="loginError"
           class="mb-4 bg-red-50 border-l-4 border-red-400 p-4 text-red-700 text-sm"
@@ -20,14 +19,14 @@
 
         <Form @submit="onSubmit" v-slot="{ errors }" class="space-y-6">
           <div>
-            <label for="documentId" class="block text-sm font-medium text-gray-700"> Cédula </label>
+            <label for="documentId" class="block text-sm font-black text-gray-700"> Cédula </label>
             <div class="mt-1 relative">
               <Field
                 id="documentId"
                 name="documentId"
                 type="text"
                 rules="required|numeric|min:5"
-                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                class="bg-[#197FC3] appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-white text-white focus:outline-none sm:text-sm"
                 :class="{
                   'border-red-300': errors.documentId,
                   'border-gray-300': !errors.documentId,
@@ -39,14 +38,14 @@
           </div>
 
           <div>
-            <label for="whatsapp" class="block text-sm font-medium text-gray-700"> Celular </label>
+            <label for="whatsapp" class="block text-sm font-black text-gray-700"> Celular </label>
             <div class="mt-1 relative">
               <Field
                 id="whatsapp"
                 name="whatsapp"
                 type="tel"
                 rules="required|numeric|min:10"
-                class="appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                class="bg-[#197FC3] appearance-none block w-full px-3 py-2 border rounded-md shadow-sm placeholder-white text-white focus:outline-none sm:text-sm"
                 :class="{ 'border-red-300': errors.whatsapp, 'border-gray-300': !errors.whatsapp }"
                 placeholder="Ej: 3001234567"
               />
@@ -58,7 +57,7 @@
             <button
               type="submit"
               :disabled="isLoading"
-              class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#E63916] focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-2xl font-bold text-white bg-[#197FC3] focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <span v-if="isLoading">Cargando...</span>
               <span v-else>¡ENTRA!</span>
@@ -66,7 +65,7 @@
           </div>
 
           <router-link to="/register">
-            <div class="text-center text-[#E40D1D]">Registrarme</div>
+            <div class="text-center text-black font-bold">Registrarme</div>
           </router-link>
         </Form>
       </div>
@@ -77,10 +76,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { Form, Field, ErrorMessage } from 'vee-validate'
-import axios from 'axios'
-import { useAuthStore } from '@/stores/auth' // Importamos el store
+import { useAuthStore } from '@/stores/auth'
 import { useRouter } from 'vue-router'
-import api from '@/api/axios.ts' // Para redirigir
+import api from '@/api/axios.ts'
 
 const authStore = useAuthStore()
 const router = useRouter()
@@ -89,7 +87,7 @@ const loginError = ref<string | null>(null)
 const isLoading = ref(false)
 
 const onSubmit = async (values: any) => {
-  loginError.value = null // Corregido .ref por .value
+  loginError.value = null
   isLoading.value = true
 
   try {
@@ -104,11 +102,9 @@ const onSubmit = async (values: any) => {
 
     const response = await api(request)
 
-    // Guardamos en Pinia (esto también guarda en localStorage por la acción setAuth)
     const { token, user } = response.data
     authStore.setAuth(token, user)
 
-    // Redirigir al ranking o al home
     router.replace('/events')
   } catch (error: any) {
     console.error(error)
