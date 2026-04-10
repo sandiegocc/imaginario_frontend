@@ -9,7 +9,7 @@
 
     <div class="flex-1 flex flex-col items-center justify-center px-4 py-8">
       <div class="flex flex-col items-center gap-6 uppercase w-full max-w-md">
-        <img src="@/assets/pintura.svg" alt="Icono" class="w-32" />
+        <Component :is="event.icon" :color="`text-white`" :width="120" />
 
         <div class="text-white text-center font-extrabold text-4xl leading-tight">
           {{ event.title }}

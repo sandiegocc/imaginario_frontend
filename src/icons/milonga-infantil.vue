@@ -1,0 +1,53 @@
+<template>
+  <svg
+    :width="width"
+    :height="height"
+    viewBox="0 0 133 131"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    :class="[`${color}`]"
+  >
+    <path
+      d="M23.6097 125.938C34.0397 125.938 42.4997 117.488 42.4997 107.048C42.4997 96.608 34.0397 88.168 23.6097 88.168C13.1797 88.168 4.71973 96.628 4.71973 107.048C4.71973 117.468 13.1797 125.938 23.6097 125.938Z"
+      stroke="currentColor"
+      stroke-width="9.44"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M108.59 102.328C119.02 102.328 127.48 93.8781 127.48 83.4481C127.48 73.0181 119.03 64.5581 108.59 64.5581C98.1502 64.5581 89.7002 73.0181 89.7002 83.4481C89.7002 93.8781 98.1502 102.328 108.59 102.328Z"
+      stroke="currentColor"
+      stroke-width="9.44"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M127.47 83.4481V9.41814C127.47 8.69814 127.3 7.98814 126.97 7.33814C126.65 6.68814 126.18 6.12814 125.61 5.68814C125.04 5.24814 124.37 4.94814 123.66 4.80814C122.95 4.66814 122.22 4.69814 121.52 4.87814L45.99 25.8481C44.99 26.1181 44.11 26.7081 43.48 27.5281C42.85 28.3481 42.5 29.3481 42.5 30.3881V107.058"
+      stroke="currentColor"
+      stroke-width="9.44"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M42.4893 55.1183L127.469 31.5083"
+      stroke="currentColor"
+      stroke-width="9.44"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</template>
+
+<script setup lang="ts">
+interface Props {
+  color?: string
+  width?: string | number
+  height?: string | number
+}
+
+withDefaults(defineProps<Props>(), {
+  color: 'currentColor',
+  width: 133,
+  height: 131,
+})
+</script>

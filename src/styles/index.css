@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  /* colores de tarjetas */
+  --color-verde: #A2D2B8;
+  --color-verde-oscuro: #3B6B54;
+  --color-rosado: #DFA3CA;
+  --color-rosado-oscuro: #8E4D75;
+  --color-amarillo: #FEE5C0;
+  --color-amarillo-oscuro: #A67C37;
+  --color-melon: #FAD4D2;
+  --color-melon-oscuro: #9E5A56;
+  --color-verde-oliva: #D9E5A4;
+  --color-verde-oliva-oscuro: #5F6B2D;
+}
+
 .login-bg {
   background-image: url("@/assets/login-bg.png");
   background-size: cover;

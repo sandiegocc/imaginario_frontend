@@ -42,7 +42,8 @@
         :class="[`${event.cardColor}`]"
         class="rounded-lg p-4 font-bold flex flex-col items-center gap-2 shadow-lg justify-center"
       >
-        <img class="w-[40%]" :src="event.icon" :alt="event.title" />
+        <Component :is="event.icon" :color="event.iconColor" :width="60" />
+
         <span class="text-center leading-none tracking-tight">{{ event.title }}</span>
       </router-link>
     </div>
