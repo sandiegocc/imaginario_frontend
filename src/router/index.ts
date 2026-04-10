@@ -61,7 +61,7 @@ router.beforeEach((to, from, next) => {
 
   // matched.some verifica si la ruta o ALGUNA de sus padres requiere auth
   if (to.matched.some((record) => record.meta.requiresAuth) && !isAuth) {
-    next({ name: 'login' })
+    next({ name: 'register' })
   } else if (to.matched.some((record) => record.meta.guestOnly) && isAuth) {
     next({ name: 'events' })
   } else {

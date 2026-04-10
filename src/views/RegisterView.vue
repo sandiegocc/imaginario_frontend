@@ -40,7 +40,9 @@
           </div>
 
           <div>
-            <label for="team" class="block text-sm font-black text-black">Nombra a tu equipo </label>
+            <label for="team" class="block text-sm font-black text-black"
+              >Nombra a tu equipo
+            </label>
             <div class="mt-1 relative">
               <Field
                 id="team"
@@ -126,6 +128,12 @@
             <div class="text-center text-black font-bold">Ingresar</div>
           </router-link>
         </Form>
+      </div>
+
+      <div class="text-center mt-6">
+        Al registrarte estas aceptando nuestra Política de Datos y Términos y Condiciones del
+        concurso Imaginario Sandiego, disponible en nuestro sitio web
+        <a class="font-bold" href="https://sandiego.com.co/" target="_blank">https://sandiego.com.co/</a>
       </div>
     </div>
   </div>

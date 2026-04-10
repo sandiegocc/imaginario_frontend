@@ -70,7 +70,7 @@ const authStore = useAuthStore()
 
 const logout = () => {
   authStore.logout()
-  router.replace('/login')
+  router.replace('/register')
 }
 
 onMounted(async () => {
