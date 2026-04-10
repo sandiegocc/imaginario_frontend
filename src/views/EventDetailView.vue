@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="event"
-    class="min-h-screen flex flex-col bg-cover"
+    class="min-h-screen flex flex-col bg-cover bg-center"
     :style="{ backgroundImage: `url(${event.eventBg})` }"
   >
     <div class="flex items-center justify-between gap-4 mx-6 mt-4 shrink-0">

@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@source inline("text-{verde,rosado,amarillo,melon,verde-oliva}-oscuro");
+
 @theme {
   /* colores de tarjetas */
   --color-verde: #A2D2B8;
