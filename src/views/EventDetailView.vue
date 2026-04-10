@@ -104,11 +104,10 @@ const onSubmit = async (values: any) => {
       url: '/imaginario/register-event',
       data: {
         keyword: values.keyword,
-        event_id: eventId, // Tip: suele ser útil enviar el ID del evento también
       },
     }
 
-    const response = await api(request)
+    await api(request)
     await router.replace('/events/success')
   } catch (error: any) {
     if (error.response?.status === 404) {
