@@ -29,7 +29,7 @@
 
     <!-- Title -->
     <div class="flex items-center justify-between gap-4 mx-6 mt-4 mb-8">
-      <h1 class="font-bold text-3xl text-black uppercase leading-0">Elige un taller</h1>
+      <h1 class="font-bold text-3xl text-black uppercase leading-0 my-4">Elige un taller</h1>
     </div>
     <!-- Parte dinamíca -->
 
@@ -39,12 +39,16 @@
         v-for="event in events"
         :key="event.title"
         href="/"
-        :class="[`${event.cardColor}`]"
+        :class="[`bg-${event.cardColor}`]"
         class="rounded-lg p-4 font-bold flex flex-col items-center gap-2 shadow-lg justify-center"
       >
-        <Component :is="event.icon" :color="event.iconColor" :width="60" />
+        <Component :is="event.icon" :color="`text-${event.cardColor}-oscuro`" :width="60" />
 
         <span class="text-center leading-none tracking-tight">{{ event.title }}</span>
+
+        <div class="w-[50%] h-1 rounded my-2 bg-white/50"></div>
+
+        <span class="text-center leading-none tracking-tight">{{ event.date }}</span>
       </router-link>
     </div>
   </div>

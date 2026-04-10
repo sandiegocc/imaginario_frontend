@@ -18,8 +18,8 @@ export const events = [
     keyword: 'robotica',
     url: 'torneo-robotica-iyrc-colombia',
     icon: Robotica,
-    cardColor: 'bg-verde',
-    iconColor: 'text-verde-oscuro',
+    cardColor: 'verde',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '11 de abril',
@@ -32,8 +32,8 @@ export const events = [
     keyword: 'futuro',
     url: 'historias-del-futuro',
     icon: HistoriasDelFuturo,
-    cardColor: 'bg-rosado',
-    iconColor: 'text-rosado-oscuro',
+    cardColor: 'rosado',
+    eventBg: '/assets/historias-del-futuro.png'
   },
   {
     date: '11 de abril',
@@ -46,8 +46,8 @@ export const events = [
     keyword: 'amigos',
     url: 'taller-fabrica-amigos-imaginarios',
     icon: FabricaDeAmigosImaginarios,
-    cardColor: 'bg-amarillo',
-    iconColor: 'text-amarillo-oscuro',
+    cardColor: 'amarillo',
+    eventBg: '/assets/fabrica-de-amigos-imaginarios.png'
   },
   {
     date: '11 de abril',
@@ -60,8 +60,8 @@ export const events = [
     keyword: 'cocinar',
     url: 'cocineritos-con-frisby',
     icon: Robotica,
-    cardColor: 'bg-melon',
-    iconColor: 'text-melon-oscuro',
+    cardColor: 'melon',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '12 de abril',
@@ -74,8 +74,8 @@ export const events = [
     keyword: 'caricatura',
     url: 'caricaturas-familia-en-vivo',
     icon: CaricaturasEnFamilia,
-    cardColor: 'bg-verde-oliva',
-    iconColor: 'text-verde-oliva-oscuro',
+    cardColor: 'verde-oliva',
+    eventBg: '/assets/caricaturas-en-familia.png'
   },
   {
     date: '12 de abril',
@@ -88,8 +88,8 @@ export const events = [
     keyword: 'tarjeta',
     url: 'taller-robotica-tarjeta-luminosa',
     icon: Robotica,
-    cardColor: 'bg-verde',
-    iconColor: 'text-verde-oscuro',
+    cardColor: 'verde',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '12 de abril',
@@ -102,8 +102,8 @@ export const events = [
     keyword: 'milonga',
     url: 'milonga-infantil-show-baile',
     icon: MilongaInfantil,
-    cardColor: 'bg-rosado',
-    iconColor: 'text-rosado-oscuro',
+    cardColor: 'rosado',
+    eventBg: '/assets/milonga-infantil.png'
   },
   {
     date: '12 de abril',
@@ -115,8 +115,8 @@ export const events = [
     keyword: 'dibujo',
     url: 'taller-dibujo-sportage-dajarego',
     icon: TallerDeDibujo,
-    cardColor: 'bg-amarillo',
-    iconColor: 'text-amarillo-oscuro',
+    cardColor: 'amarillo',
+    eventBg: '/assets/taller-de-dibujo.png'
   },
   {
     date: '12 de abril',
@@ -128,8 +128,8 @@ export const events = [
     keyword: 'plastilina',
     url: 'taller-plastilina-casera',
     icon: Robotica,
-    cardColor: 'bg-melon',
-    iconColor: 'text-melon-oscuro',
+    cardColor: 'melon',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '17 de abril',
@@ -142,8 +142,8 @@ export const events = [
     keyword: 'imaginar',
     url: 'historias-del-futuro-1',
     icon: HistoriasDelFuturo,
-    cardColor: 'bg-verde-oliva',
-    iconColor: 'text-verde-oliva-oscuro',
+    cardColor: 'verde-oliva',
+    eventBg: '/assets/historias-del-futuro.png'
   },
   {
     date: '17 de abril',
@@ -156,8 +156,8 @@ export const events = [
     keyword: 'fábrica',
     url: 'taller-fabrica-amigos-imaginarios-1',
     icon: FabricaDeAmigosImaginarios,
-    cardColor: 'bg-verde',
-    iconColor: 'text-verde-oscuro',
+    cardColor: 'verde',
+    eventBg: '/assets/fabrica-de-amigos-imaginarios.png'
   },
   {
     date: '17 de abril',
@@ -169,8 +169,8 @@ export const events = [
     keyword: 'manillas',
     url: 'taller-elaboracion-manillas',
     icon: Robotica,
-    cardColor: 'bg-rosado',
-    iconColor: 'text-rosado-oscuro',
+    cardColor: 'rosado',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '18 de abril',
@@ -182,8 +182,8 @@ export const events = [
     keyword: 'deporte',
     url: 'clases-basket-con-sportage',
     icon: ClasesDeBasket,
-    cardColor: 'bg-amarillo',
-    iconColor: 'text-amarillo-oscuro',
+    cardColor: 'amarillo',
+    eventBg: '/assets/clases-de-basket.png'
   },
   {
     date: '18 de abril',
@@ -195,8 +195,8 @@ export const events = [
     keyword: 'hogar',
     url: 'taller-creatividad-tejiendo-hogares',
     icon: Robotica,
-    cardColor: 'bg-melon',
-    iconColor: 'text-melon-oscuro',
+    cardColor: 'melon',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '18 de abril',
@@ -209,8 +209,8 @@ export const events = [
     keyword: 'tecnología',
     url: 'taller-de-robotica',
     icon: Robotica,
-    cardColor: 'bg-verde-oliva',
-    iconColor: 'text-verde-oliva-oscuro',
+    cardColor: 'verde-oliva',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '18 de abril',
@@ -223,8 +223,8 @@ export const events = [
     keyword: 'ciencia',
     url: 'historias-del-futuro-2',
     icon: HistoriasDelFuturo,
-    cardColor: 'bg-verde',
-    iconColor: 'text-verde-oscuro',
+    cardColor: 'verde',
+    eventBg: '/assets/historias-del-futuro.png'
   },
   {
     date: '18 de abril',
@@ -236,8 +236,8 @@ export const events = [
     keyword: 'cultura',
     url: 'taller-manualidades-red-bibliotecas',
     icon: Robotica,
-    cardColor: 'bg-rosado',
-    iconColor: 'text-rosado-oscuro',
+    cardColor: 'rosado',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '18 de abril',
@@ -250,8 +250,8 @@ export const events = [
     keyword: 'arte',
     url: 'semillas-imaginacion-taller-creativo',
     icon: Robotica,
-    cardColor: 'bg-amarillo',
-    iconColor: 'text-amarillo-oscuro',
+    cardColor: 'amarillo',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '18 de abril',
@@ -263,8 +263,8 @@ export const events = [
     keyword: 'respeto',
     url: 'cuerpo-nadie-se-mete',
     icon: Robotica,
-    cardColor: 'bg-melon',
-    iconColor: 'text-melon-oscuro',
+    cardColor: 'melon',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '18 de abril',
@@ -276,8 +276,8 @@ export const events = [
     keyword: 'ilustrar',
     url: 'taller-ilustracion-ipad-mac',
     icon: TallerDeDibujo,
-    cardColor: 'bg-verde-oliva',
-    iconColor: 'text-verde-oliva-oscuro',
+    cardColor: 'verde-oliva',
+    eventBg: '/assets/taller-de-dibujo.png'
   },
   {
     date: '18 de abril',
@@ -289,8 +289,8 @@ export const events = [
     keyword: 'movimiento',
     url: 'imattginario-activacion-matt',
     icon: Robotica,
-    cardColor: 'bg-verde',
-    iconColor: 'text-verde-oscuro',
+    cardColor: 'verde',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '19 de abril',
@@ -303,8 +303,8 @@ export const events = [
     keyword: 'caricatura',
     url: 'caricaturas-familia-en-vivo-1',
     icon: CaricaturasEnFamilia,
-    cardColor: 'bg-rosado',
-    iconColor: 'text-rosado-oscuro',
+    cardColor: 'rosado',
+    eventBg: '/assets/caricaturas-en-familia.png'
   },
   {
     date: '19 de abril',
@@ -316,8 +316,8 @@ export const events = [
     keyword: '3d',
     url: 'taller-robotica-lapiz-3d',
     icon: Robotica,
-    cardColor: 'bg-amarillo',
-    iconColor: 'text-amarillo-oscuro',
+    cardColor: 'amarillo',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '24 de abril',
@@ -330,8 +330,8 @@ export const events = [
     keyword: 'mundo',
     url: 'historias-del-futuro-3',
     icon: HistoriasDelFuturo,
-    cardColor: 'bg-melon',
-    iconColor: 'text-melon-oscuro',
+    cardColor: 'melon',
+    eventBg: '/assets/historias-del-futuro.png'
   },
   {
     date: '24 de abril',
@@ -344,8 +344,8 @@ export const events = [
     keyword: 'verde',
     url: 'taller-guardianes-territorio-verde',
     icon: Robotica,
-    cardColor: 'bg-verde-oliva',
-    iconColor: 'text-verde-oliva-oscuro',
+    cardColor: 'verde-oliva',
+    eventBg: '/assets/guardianes-del-territorio-verde.png'
   },
   {
     date: '24 de abril',
@@ -358,8 +358,8 @@ export const events = [
     keyword: 'pintura',
     url: 'taller-creativo-semillas-imaginacion',
     icon: Robotica,
-    cardColor: 'bg-verde',
-    iconColor: 'text-verde-oscuro',
+    cardColor: 'verde',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '24 de abril',
@@ -371,8 +371,8 @@ export const events = [
     keyword: 'porcelana',
     url: 'taller-de-pintura',
     icon: TallerDeDibujo,
-    cardColor: 'bg-rosado',
-    iconColor: 'text-rosado-oscuro',
+    cardColor: 'rosado',
+    eventBg: '/assets/taller-de-dibujo.png'
   },
   {
     date: '25 de abril',
@@ -384,8 +384,8 @@ export const events = [
     keyword: 'saltar',
     url: 'clases-basket-con-sportage-1',
     icon: ClasesDeBasket,
-    cardColor: 'bg-amarillo',
-    iconColor: 'text-amarillo-oscuro',
+    cardColor: 'amarillo',
+    eventBg: '/assets/clases-de-basket.png'
   },
   {
     date: '25 de abril',
@@ -397,8 +397,8 @@ export const events = [
     keyword: 'crear',
     url: 'vivir-arte-imaginario-festival',
     icon: TallerDeDibujo,
-    cardColor: 'bg-melon',
-    iconColor: 'text-melon-oscuro',
+    cardColor: 'melon',
+    eventBg: '/assets/taller-de-dibujo.png'
   },
   {
     date: '25 de abril',
@@ -411,8 +411,8 @@ export const events = [
     keyword: 'huerta',
     url: 'taller-alimentacion-huerta-productiva',
     icon: Robotica,
-    cardColor: 'bg-verde-oliva',
-    iconColor: 'text-verde-oliva-oscuro',
+    cardColor: 'verde-oliva',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '25 de abril',
@@ -424,8 +424,8 @@ export const events = [
     keyword: 'interactivo',
     url: 'taller-de-robotica-1',
     icon: Robotica,
-    cardColor: 'bg-verde',
-    iconColor: 'text-verde-oscuro',
+    cardColor: 'verde',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '25 de abril',
@@ -438,8 +438,8 @@ export const events = [
     keyword: 'leer',
     url: 'historias-del-futuro-4',
     icon: HistoriasDelFuturo,
-    cardColor: 'bg-rosado',
-    iconColor: 'text-rosado-oscuro',
+    cardColor: 'rosado',
+    eventBg: '/assets/historias-del-futuro.png'
   },
   {
     date: '25 de abril',
@@ -451,8 +451,8 @@ export const events = [
     keyword: 'personajes',
     url: 'taller-itinerante-fabrica-amigos',
     icon: FabricaDeAmigosImaginarios,
-    cardColor: 'bg-amarillo',
-    iconColor: 'text-amarillo-oscuro',
+    cardColor: 'amarillo',
+    eventBg: '/assets/fabrica-de-amigos-imaginarios.png'
   },
   {
     date: '25 de abril',
@@ -465,8 +465,8 @@ export const events = [
     keyword: 'teatro',
     url: 'sketch-teatral-metro-80',
     icon: Robotica,
-    cardColor: 'bg-melon',
-    iconColor: 'text-melon-oscuro',
+    cardColor: 'melon',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '25 de abril',
@@ -478,8 +478,8 @@ export const events = [
     keyword: 'historias',
     url: 'fabrica-amigos-imaginarios',
     icon: FabricaDeAmigosImaginarios,
-    cardColor: 'bg-verde-oliva',
-    iconColor: 'text-verde-oliva-oscuro',
+    cardColor: 'verde-oliva',
+    eventBg: '/assets/fabrica-de-amigos-imaginarios.png'
   },
   {
     date: '25 de abril',
@@ -491,8 +491,8 @@ export const events = [
     keyword: 'música',
     url: 'presentacion-red-musica-medellin',
     icon: Robotica,
-    cardColor: 'bg-verde',
-    iconColor: 'text-verde-oscuro',
+    cardColor: 'verde',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
   {
     date: '26 de abril',
@@ -505,8 +505,8 @@ export const events = [
     keyword: 'familia',
     url: 'caricaturas-familia-en-vivo-2',
     icon: CaricaturasEnFamilia,
-    cardColor: 'bg-rosado',
-    iconColor: 'text-rosado-oscuro',
+    cardColor: 'rosado',
+    eventBg: '/assets/caricaturas-en-familia.png'
   },
   {
     date: '26 de abril',
@@ -518,8 +518,8 @@ export const events = [
     keyword: 'artistas',
     url: 'vivir-arte-imaginario-festival-1',
     icon: TallerDeDibujo,
-    cardColor: 'bg-amarillo',
-    iconColor: 'text-amarillo-oscuro',
+    cardColor: 'amarillo',
+    eventBg: '/assets/taller-de-dibujo.png'
   },
   {
     date: '26 de abril',
@@ -532,7 +532,7 @@ export const events = [
     keyword: 'figuras',
     url: 'taller-figuras-3d-pintura',
     icon: Robotica,
-    cardColor: 'bg-melon',
-    iconColor: 'text-melon-oscuro',
+    cardColor: 'melon',
+    eventBg: '/assets/fabrica-de-robots.png'
   },
 ]

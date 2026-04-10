@@ -1,5 +1,9 @@
 <template>
-  <div v-if="event" class="min-h-screen bg-[#3068B1] flex flex-col pintura-bg">
+  <div
+    v-if="event"
+    class="min-h-screen flex flex-col bg-cover"
+    :style="{ backgroundImage: `url(${event.eventBg})` }"
+  >
     <div class="flex items-center justify-between gap-4 mx-6 mt-4 shrink-0">
       <router-link class="w-[40%]" to="/" replace>
         <img src="@/assets/imaginario-logo-2.svg" alt="Imaginario Logo 2" />
