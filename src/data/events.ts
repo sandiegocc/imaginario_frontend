@@ -9,6 +9,7 @@ import ClasesDeBasket from '@/icons/clases-de-basket.vue'
 export const events = [
   {
     date: '11 de abril',
+    fullDate: '2026-04-11',
     time: '8: 00 a.m. a 11:00 a.m.   y  1:00 p.m. a 4 p.m.',
     title: 'Torneo de Robótica I.Y.R.C. Colombia [International Youth Robot Competition]',
     location: 'El Mirador - Centro de Eventos',
@@ -23,6 +24,7 @@ export const events = [
   },
   {
     date: '11 de abril',
+    fullDate: '2026-04-11',
     time: '3:00 p.m. a 4:00 p.m.',
     title: 'Historias del futuro',
     location: 'Plaza Sandiego',
@@ -37,6 +39,7 @@ export const events = [
   },
   {
     date: '11 de abril',
+    fullDate: '2026-04-11',
     time: '4:30 p.m. a 6:30 p.m.',
     title: 'Taller - Fábrica de Amigos Imaginarios',
     location: 'Plaza Sandiego',
@@ -51,6 +54,7 @@ export const events = [
   },
   {
     date: '11 de abril',
+    fullDate: '2026-04-11',
     time: '4:00 p.m',
     title: 'Cocineritos con Frisby',
     location: 'Plaza Sandiego',
@@ -65,6 +69,7 @@ export const events = [
   },
   {
     date: '12 de abril',
+    fullDate: '2026-04-12',
     time: '2:00 p.m. a 4:00 p.m.',
     title: 'Caricaturas en familia [en vivo]',
     location: 'Plaza Sandiego',
@@ -79,6 +84,7 @@ export const events = [
   },
   {
     date: '12 de abril',
+    fullDate: '2026-04-12',
     time: '3:00 p.m',
     title: 'Taller de robótica Tarjeta Luminosa',
     location: 'Plaza Sandiego',
@@ -93,6 +99,7 @@ export const events = [
   },
   {
     date: '12 de abril',
+    fullDate: '2026-04-12',
     time: '3:00 p.m',
     title: 'Milonga infantil -  Tendremos pareja de baile de niños como show central',
     location: 'Plaza Jardín',
@@ -107,6 +114,7 @@ export const events = [
   },
   {
     date: '12 de abril',
+    fullDate: '2026-04-12',
     time: '4:30 p.m',
     title: 'Taller de Dibujo con Sportage por Dajarego',
     location: 'La T',
@@ -120,6 +128,7 @@ export const events = [
   },
   {
     date: '12 de abril',
+    fullDate: '2026-04-12',
     time: '4:00 p.m',
     title: 'Taller de plastilina Casera',
     location: 'Plaza Sandiego',
@@ -133,6 +142,7 @@ export const events = [
   },
   {
     date: '17 de abril',
+    fullDate: '2026-04-17',
     time: '3:00 p.m. a 4:00 p.m.',
     title: 'Historias del futuro',
     location: 'Plaza Sandiego',
@@ -147,6 +157,7 @@ export const events = [
   },
   {
     date: '17 de abril',
+    fullDate: '2026-04-17',
     time: '4:30 pm – 6:30 pm',
     title: 'Taller - Fábrica de Amigos Imaginarios',
     location: 'Plaza Sandiego',
@@ -161,6 +172,7 @@ export const events = [
   },
   {
     date: '17 de abril',
+    fullDate: '2026-04-17',
     time: '5:00 p.m',
     title: 'Taller Elaboracion de manillas',
     location: 'Plaza Sandiego',
@@ -174,6 +186,7 @@ export const events = [
   },
   {
     date: '18 de abril',
+    fullDate: '2026-04-18',
     time: '10:00 a.m - 12:00 m',
     title: 'Clases de Basket con Sportage. Invitar a que los niños traigan su balón',
     location: 'El Patio',
@@ -187,6 +200,7 @@ export const events = [
   },
   {
     date: '18 de abril',
+    fullDate: '2026-04-18',
     time: '10:00 a.m - 12:00 m',
     title: 'Taller explota la creatividad de tus hijos. Tejiendo Hogares',
     location: 'Auditorio',
@@ -200,6 +214,7 @@ export const events = [
   },
   {
     date: '18 de abril',
+    fullDate: '2026-04-18',
     time: '2:00 p.m',
     title: 'Taller de robótica',
     location: 'Plaza Sandiego',
@@ -214,6 +229,7 @@ export const events = [
   },
   {
     date: '18 de abril',
+    fullDate: '2026-04-18',
     time: '3:00 p.m. a 4:00 p.m.',
     title: 'Historias del futuro',
     location: 'Plaza Sandiego',
@@ -228,6 +244,7 @@ export const events = [
   },
   {
     date: '18 de abril',
+    fullDate: '2026-04-18',
     time: '3:00 p.m',
     title: 'Taller de manualidades para niños- sistema red de biblioetecas',
     location: 'Plaza Sandiego',
@@ -241,6 +258,7 @@ export const events = [
   },
   {
     date: '18 de abril',
+    fullDate: '2026-04-18',
     time: '4:30 p.m. a 6:30 p.m.',
     title: 'Semillas de Imaginación (Taller creativo itinerante)',
     location: 'Plaza Sandiego',
@@ -255,6 +273,7 @@ export const events = [
   },
   {
     date: '18 de abril',
+    fullDate: '2026-04-18',
     time: '3:00 p.m',
     title: 'Con mi cuerpo nadie se mete (tejiendo hogares)',
     location: 'Plaza Sandiego',
@@ -268,6 +287,7 @@ export const events = [
   },
   {
     date: '18 de abril',
+    fullDate: '2026-04-18',
     time: '4:00 p.m',
     title: 'Taller de ilustracion con Ipad con Mac Center',
     location: 'Plaza Sandiego',
@@ -281,6 +301,7 @@ export const events = [
   },
   {
     date: '18 de abril',
+    fullDate: '2026-04-18',
     time: '4:30 p.m',
     title: 'Imattginario  (Activacion Matt)',
     location: 'Plaza Sandiego',
@@ -294,6 +315,7 @@ export const events = [
   },
   {
     date: '19 de abril',
+    fullDate: '2026-04-19',
     time: '2:00 p.m. a 4:00 p.m.',
     title: 'Caricaturas en familia [en vivo]',
     location: 'Plaza Sandiego',
@@ -308,6 +330,7 @@ export const events = [
   },
   {
     date: '19 de abril',
+    fullDate: '2026-04-19',
     time: '3:00 p. m',
     title: 'Taller de robótica - Creacion de figuras con lapiz 3D',
     location: 'Plaza Sandiego',
@@ -321,6 +344,7 @@ export const events = [
   },
   {
     date: '24 de abril',
+    fullDate: '2026-04-24',
     time: '3:00 p.m. a 4:00 p.m.',
     title: 'Historias del futuro',
     location: 'Mediadora Bodega/Comfama',
@@ -335,6 +359,7 @@ export const events = [
   },
   {
     date: '24 de abril',
+    fullDate: '2026-04-24',
     time: '4:00pm',
     title: 'Taller guardianes del territorio verde',
     location: 'Guardines del Territorio Verde',
@@ -349,6 +374,7 @@ export const events = [
   },
   {
     date: '24 de abril',
+    fullDate: '2026-04-24',
     time: '4:30 pm – 6:30 pm',
     title: 'Taller creativo itinerante - Semillas de Imaginación',
     location: 'Mediadora Bodega/Comfama',
@@ -363,6 +389,7 @@ export const events = [
   },
   {
     date: '24 de abril',
+    fullDate: '2026-04-24',
     time: '5:00pm',
     title: 'Taller de pintura',
     location: 'Caprichos',
@@ -376,6 +403,7 @@ export const events = [
   },
   {
     date: '25 de abril',
+    fullDate: '2026-04-25',
     time: '10:00 a.m - 12:00 m',
     title: 'Clases de Basket con Sportage. Invitar a que los niños traigan su balón',
     location: 'El Patio',
@@ -389,6 +417,7 @@ export const events = [
   },
   {
     date: '25 de abril',
+    fullDate: '2026-04-25',
     time: '3:00 p.m',
     title: 'Vivir el arte en imaginario:  festival de pintura y taller con niños',
     location: 'Plaza Sandiego',
@@ -402,6 +431,7 @@ export const events = [
   },
   {
     date: '25 de abril',
+    fullDate: '2026-04-25',
     time: '2:00 p.m - 4:00 p.m',
     title:
       'Taller de alimentación - Huerta productiva [Seguridad alimentaria Alcaldia de Medellín. 30 cupos',
@@ -416,6 +446,7 @@ export const events = [
   },
   {
     date: '25 de abril',
+    fullDate: '2026-04-25',
     time: '2:00 p.m',
     title: 'Taller de robótica',
     location: 'Plaza Sandiego',
@@ -429,6 +460,7 @@ export const events = [
   },
   {
     date: '25 de abril',
+    fullDate: '2026-04-25',
     time: '3:00 p.m. a 4:00 p.m.',
     title: 'Historias del futuro',
     location: 'Mediadora Bodega/Comfama',
@@ -443,6 +475,7 @@ export const events = [
   },
   {
     date: '25 de abril',
+    fullDate: '2026-04-25',
     time: '4:30 pm – 6:30 pm',
     title: 'Taller creativo itinerante - Fábrica de Amigos Imaginarios',
     location: 'Mediadora Bodega/Comfama',
@@ -456,6 +489,7 @@ export const events = [
   },
   {
     date: '25 de abril',
+    fullDate: '2026-04-25',
     time: '4:00 p.m',
     title:
       'Sketch Teatral Un dia muy especial - Metro de la 80 ( 40 minutos) sonido - lugar de cambio- camerino- agua',
@@ -470,6 +504,7 @@ export const events = [
   },
   {
     date: '25 de abril',
+    fullDate: '2026-04-25',
     time: '4:00 pm – 6:00 pm',
     title: 'Fábrica de amigos imaginarios',
     location: 'Mediadora Bodega/Comfama',
@@ -483,6 +518,7 @@ export const events = [
   },
   {
     date: '25 de abril',
+    fullDate: '2026-04-25',
     time: '5: 30 p.m',
     title: 'presentacion red de musica de medellin',
     location: 'plaza Jardin',
@@ -496,6 +532,7 @@ export const events = [
   },
   {
     date: '26 de abril',
+    fullDate: '2026-04-26',
     time: '2:00 p.m. a 4:00 p.m.',
     title: 'Caricaturas en familia [en vivo]',
     location: 'Plaza Sandiego',
@@ -510,6 +547,7 @@ export const events = [
   },
   {
     date: '26 de abril',
+    fullDate: '2026-04-26',
     time: '3:00 p.m',
     title: 'Vivir el arte en imaginario:  festival de pintura y taller con niños',
     location: 'Plaza Sandiego',
@@ -523,6 +561,7 @@ export const events = [
   },
   {
     date: '26 de abril',
+    fullDate: '2026-04-26',
     time: '3:00 p.m',
     title: 'Taller de figuras en 3D / Pintando impresiones',
     location: 'Plaza Sandiego',

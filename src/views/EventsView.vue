@@ -1,12 +1,10 @@
 <template>
   <div class="min-h-screen">
-    <!-- Header -->
     <div class="flex items-center justify-between gap-4 mx-6 mt-4">
       <img class="w-[40%]" src="@/assets/Imaginario-negro.svg" alt="Imaginario Logo 2" />
       <img class="w-[40%]" src="@/assets/logo-sandiego-negro.svg" alt="Sandiego Logo" />
     </div>
 
-    <!-- Barra de progreso -->
     <router-link to="/ranking">
       <div class="relative bg-blue-600 text-white m-6 rounded-2xl p-4 overflow-hidden shadow-xl">
         <img
@@ -27,46 +25,51 @@
       </div>
     </router-link>
 
-    <!-- Title -->
     <div class="flex items-center justify-between gap-4 mx-6 mt-4 mb-8">
-      <h1 class="font-bold text-3xl text-black uppercase leading-0 my-4">Elige un taller</h1>
+      <h1 class="font-bold text-3xl text-black uppercase leading-0 my-4">
+        {{ filteredEvents.length > 0 ? 'Elige un taller' : 'No hay talleres disponibles' }}
+      </h1>
     </div>
-    <!-- Parte dinamíca -->
 
     <div class="grid grid-cols-2 gap-4 mx-6">
       <router-link
         :to="`/events/${event.url}`"
-        v-for="event in events"
-        :key="event.title"
-        href="/"
+        v-for="event in filteredEvents"
+        :key="event.url"
         :class="[`bg-${event.cardColor}`]"
-        class="rounded-lg p-4 font-bold flex flex-col items-center gap-2 shadow-lg justify-center"
+        class="rounded-lg p-4 font-bold flex flex-col items-center gap-2 shadow-lg justify-center text-black"
       >
         <Component :is="event.icon" :color="`text-${event.cardColor}-oscuro`" :width="60" />
-
         <span class="text-center leading-none tracking-tight">{{ event.title }}</span>
-
         <div class="w-[50%] h-1 rounded my-2 bg-white/50"></div>
-
         <span class="text-center leading-none tracking-tight">{{ event.date }}</span>
       </router-link>
     </div>
-  </div>
 
-  <div class="flex items-center justify-center my-4">
-    <button class="bg-black text-white px-4 py-2 rounded" @click="logout">Cerrar sesión</button>
+    <div class="flex items-center justify-center my-8">
+      <button class="bg-black text-white px-4 py-2 rounded-xl" @click="logout">Cerrar sesión</button>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { useAuthStore } from '@/stores/auth.ts'
-const router = useRouter()
+import { onMounted, computed } from 'vue'
 import { useRouter } from 'vue-router'
-import { onMounted } from 'vue'
+import { useAuthStore } from '@/stores/auth.ts'
 import { events } from '@/data/events.ts'
 import api from '@/api/axios.ts'
 
+const router = useRouter()
 const authStore = useAuthStore()
+
+// Lógica de filtrado: muestra solo eventos de hoy en adelante
+const filteredEvents = computed(() => {
+  const today = new Date().toISOString().split('T')[0] // Formato 2026-04-13
+
+  return events
+    .filter((event) => event.fullDate >= today)
+    .sort((a, b) => a.fullDate.localeCompare(b.fullDate))
+})
 
 const logout = () => {
   authStore.logout()
@@ -74,13 +77,11 @@ const logout = () => {
 }
 
 onMounted(async () => {
-  const request = {
-    method: 'GET',
-    url: '/imaginario/user',
+  try {
+    const response = await api.get('/imaginario/user')
+    authStore.user = response.data.user
+  } catch (error) {
+    console.error('Error al obtener usuario:', error)
   }
-
-  const response = await api(request)
-
-  authStore.user = response.data.user
 })
 </script>
