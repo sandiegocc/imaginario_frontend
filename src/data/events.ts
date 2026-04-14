@@ -259,9 +259,9 @@ export const events = [
     description: 'Pendiente',
     keyword: 'cultura',
     url: 'taller-manualidades-red-bibliotecas',
-    icon: Robotica,
+    icon: HistoriasDelFuturo,
     cardColor: 'rosado',
-    eventBg: '/assets/fabrica-de-robots.png',
+    eventBg: '/assets/historias-del-futuro.png',
   },
   {
     date: '18 de abril',
