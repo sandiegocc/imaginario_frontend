@@ -318,7 +318,7 @@ export const events = [
     url: 'imattginario-activacion-matt',
     icon: ImattginarioActivacionMatt,
     cardColor: 'verde',
-    eventBg: '/assets/fabrica-de-robots.png',
+    eventBg: '/assets/imattginario-activacion-matt.png',
   },
   {
     date: '19 de abril',
@@ -447,9 +447,9 @@ export const events = [
     description: 'Taller de elaboración de alimentarios a partir de una huerta',
     keyword: 'huerta',
     url: 'taller-alimentacion-huerta-productiva',
-    icon: Robotica,
+    icon: SemillasImaginacionTallerCreativo,
     cardColor: 'verde-oliva',
-    eventBg: '/assets/fabrica-de-robots.png',
+    eventBg: '/assets/semillas-imaginacion-taller-creativo.png',
   },
   {
     date: '25 de abril',
