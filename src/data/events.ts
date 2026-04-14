@@ -5,6 +5,13 @@ import FabricaDeAmigosImaginarios from '@/icons/fabrica-de-amigos-imaginarios.vu
 import TallerDeDibujo from '@/icons/taller-de-dibujo.vue'
 import MilongaInfantil from '@/icons/milonga-infantil.vue'
 import ClasesDeBasket from '@/icons/clases-de-basket.vue'
+import ImattginarioActivacionMatt from '@/icons/imattginario-activacion-matt.vue'
+import PresentacionRedMusicaMedellin from '@/icons/presentacion-red-musica-medellin.vue'
+import SemillasImaginacionTallerCreativo from '@/icons/semillas-imaginacion-taller-creativo.vue'
+import SketchTeatralMetro from '@/icons/sketch-teatral-metro.vue'
+import TallerCreatividadTejiendoHogares from '@/icons/taller-creatividad-tejiendo-hogares.vue'
+import TallerElaboracionManillas from '@/icons/taller-elaboracion-manillas.vue'
+import TallerIlustracionIpadMac from '@/icons/taller-ilustracion-ipad-mac.vue'
 
 export const events = [
   {
@@ -20,7 +27,7 @@ export const events = [
     url: 'torneo-robotica-iyrc-colombia',
     icon: Robotica,
     cardColor: 'verde',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/fabrica-de-robots.png',
   },
   {
     date: '11 de abril',
@@ -35,7 +42,7 @@ export const events = [
     url: 'historias-del-futuro',
     icon: HistoriasDelFuturo,
     cardColor: 'rosado',
-    eventBg: '/assets/historias-del-futuro.png'
+    eventBg: '/assets/historias-del-futuro.png',
   },
   {
     date: '11 de abril',
@@ -50,7 +57,7 @@ export const events = [
     url: 'taller-fabrica-amigos-imaginarios',
     icon: FabricaDeAmigosImaginarios,
     cardColor: 'amarillo',
-    eventBg: '/assets/fabrica-de-amigos-imaginarios.png'
+    eventBg: '/assets/fabrica-de-amigos-imaginarios.png',
   },
   {
     date: '11 de abril',
@@ -65,7 +72,7 @@ export const events = [
     url: 'cocineritos-con-frisby',
     icon: Robotica,
     cardColor: 'melon',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/fabrica-de-robots.png',
   },
   {
     date: '12 de abril',
@@ -80,7 +87,7 @@ export const events = [
     url: 'caricaturas-familia-en-vivo',
     icon: CaricaturasEnFamilia,
     cardColor: 'verde-oliva',
-    eventBg: '/assets/caricaturas-en-familia.png'
+    eventBg: '/assets/caricaturas-en-familia.png',
   },
   {
     date: '12 de abril',
@@ -95,7 +102,7 @@ export const events = [
     url: 'taller-robotica-tarjeta-luminosa',
     icon: Robotica,
     cardColor: 'verde',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/fabrica-de-robots.png',
   },
   {
     date: '12 de abril',
@@ -110,7 +117,7 @@ export const events = [
     url: 'milonga-infantil-show-baile',
     icon: MilongaInfantil,
     cardColor: 'rosado',
-    eventBg: '/assets/milonga-infantil.png'
+    eventBg: '/assets/milonga-infantil.png',
   },
   {
     date: '12 de abril',
@@ -124,7 +131,7 @@ export const events = [
     url: 'taller-dibujo-sportage-dajarego',
     icon: TallerDeDibujo,
     cardColor: 'amarillo',
-    eventBg: '/assets/taller-de-dibujo.png'
+    eventBg: '/assets/taller-de-dibujo.png',
   },
   {
     date: '12 de abril',
@@ -138,7 +145,7 @@ export const events = [
     url: 'taller-plastilina-casera',
     icon: Robotica,
     cardColor: 'melon',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/taller-plastilina-casera.png',
   },
   {
     date: '17 de abril',
@@ -153,7 +160,7 @@ export const events = [
     url: 'historias-del-futuro-1',
     icon: HistoriasDelFuturo,
     cardColor: 'verde-oliva',
-    eventBg: '/assets/historias-del-futuro.png'
+    eventBg: '/assets/historias-del-futuro.png',
   },
   {
     date: '17 de abril',
@@ -168,7 +175,7 @@ export const events = [
     url: 'taller-fabrica-amigos-imaginarios-1',
     icon: FabricaDeAmigosImaginarios,
     cardColor: 'verde',
-    eventBg: '/assets/fabrica-de-amigos-imaginarios.png'
+    eventBg: '/assets/fabrica-de-amigos-imaginarios.png',
   },
   {
     date: '17 de abril',
@@ -180,9 +187,9 @@ export const events = [
     description: 'Elaboracion de manillas con diferentes materiales',
     keyword: 'manillas',
     url: 'taller-elaboracion-manillas',
-    icon: Robotica,
+    icon: TallerElaboracionManillas,
     cardColor: 'rosado',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/taller-elaboracion-manillas.png',
   },
   {
     date: '18 de abril',
@@ -196,7 +203,7 @@ export const events = [
     url: 'clases-basket-con-sportage',
     icon: ClasesDeBasket,
     cardColor: 'amarillo',
-    eventBg: '/assets/clases-de-basket.png'
+    eventBg: '/assets/clases-de-basket.png',
   },
   {
     date: '18 de abril',
@@ -208,9 +215,9 @@ export const events = [
     description: 'Taller donde aprenderas a conocer las habilidades y destrezas de tu hijo.',
     keyword: 'hogar',
     url: 'taller-creatividad-tejiendo-hogares',
-    icon: Robotica,
+    icon: TallerCreatividadTejiendoHogares,
     cardColor: 'melon',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/taller-creatividad-tejiendo-hogares.png',
   },
   {
     date: '18 de abril',
@@ -225,7 +232,7 @@ export const events = [
     url: 'taller-de-robotica',
     icon: Robotica,
     cardColor: 'verde-oliva',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/fabrica-de-robots.png',
   },
   {
     date: '18 de abril',
@@ -240,7 +247,7 @@ export const events = [
     url: 'historias-del-futuro-2',
     icon: HistoriasDelFuturo,
     cardColor: 'verde',
-    eventBg: '/assets/historias-del-futuro.png'
+    eventBg: '/assets/historias-del-futuro.png',
   },
   {
     date: '18 de abril',
@@ -254,7 +261,7 @@ export const events = [
     url: 'taller-manualidades-red-bibliotecas',
     icon: Robotica,
     cardColor: 'rosado',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/fabrica-de-robots.png',
   },
   {
     date: '18 de abril',
@@ -267,9 +274,9 @@ export const events = [
       'Taller donde cada niño interviene una matera con pintura y luego siembra una planta...',
     keyword: 'arte',
     url: 'semillas-imaginacion-taller-creativo',
-    icon: Robotica,
+    icon: SemillasImaginacionTallerCreativo,
     cardColor: 'amarillo',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/semillas-imaginacion-taller-creativo.png',
   },
   {
     date: '18 de abril',
@@ -281,9 +288,9 @@ export const events = [
     description: 'Actividades ludicas enfocadas en la prevencion de los niños',
     keyword: 'respeto',
     url: 'cuerpo-nadie-se-mete',
-    icon: Robotica,
+    icon: TallerCreatividadTejiendoHogares,
     cardColor: 'melon',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/taller-creatividad-tejiendo-hogares.png',
   },
   {
     date: '18 de abril',
@@ -295,9 +302,9 @@ export const events = [
     description: 'Taller de ilustracion con Ipad guiado por el personal de Mac Center',
     keyword: 'ilustrar',
     url: 'taller-ilustracion-ipad-mac',
-    icon: TallerDeDibujo,
+    icon: TallerIlustracionIpadMac,
     cardColor: 'verde-oliva',
-    eventBg: '/assets/taller-de-dibujo.png'
+    eventBg: '/assets/taller-ilustracion-ipad-mac.png',
   },
   {
     date: '18 de abril',
@@ -309,9 +316,9 @@ export const events = [
     description: 'Activacion de Matt, conoce el proceso de Matt y su historia',
     keyword: 'movimiento',
     url: 'imattginario-activacion-matt',
-    icon: Robotica,
+    icon: ImattginarioActivacionMatt,
     cardColor: 'verde',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/fabrica-de-robots.png',
   },
   {
     date: '19 de abril',
@@ -326,7 +333,7 @@ export const events = [
     url: 'caricaturas-familia-en-vivo-1',
     icon: CaricaturasEnFamilia,
     cardColor: 'rosado',
-    eventBg: '/assets/caricaturas-en-familia.png'
+    eventBg: '/assets/caricaturas-en-familia.png',
   },
   {
     date: '19 de abril',
@@ -340,7 +347,7 @@ export const events = [
     url: 'taller-robotica-lapiz-3d',
     icon: Robotica,
     cardColor: 'amarillo',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/fabrica-de-robots.png',
   },
   {
     date: '24 de abril',
@@ -355,7 +362,7 @@ export const events = [
     url: 'historias-del-futuro-3',
     icon: HistoriasDelFuturo,
     cardColor: 'melon',
-    eventBg: '/assets/historias-del-futuro.png'
+    eventBg: '/assets/historias-del-futuro.png',
   },
   {
     date: '24 de abril',
@@ -368,9 +375,9 @@ export const events = [
       'Elaboración de materas para un jardín vertical que se plantará en la zona de La Asomadera',
     keyword: 'verde',
     url: 'taller-guardianes-territorio-verde',
-    icon: Robotica,
+    icon: SemillasImaginacionTallerCreativo,
     cardColor: 'verde-oliva',
-    eventBg: '/assets/guardianes-del-territorio-verde.png'
+    eventBg: '/assets/guardianes-del-territorio-verde.png',
   },
   {
     date: '24 de abril',
@@ -383,9 +390,9 @@ export const events = [
       'Taller donde cada niño interviene una matera con pintura y luego siembra una planta...',
     keyword: 'pintura',
     url: 'taller-creativo-semillas-imaginacion',
-    icon: Robotica,
+    icon: SemillasImaginacionTallerCreativo,
     cardColor: 'verde',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/semillas-imaginacion-taller-creativo.png',
   },
   {
     date: '24 de abril',
@@ -399,7 +406,7 @@ export const events = [
     url: 'taller-de-pintura',
     icon: TallerDeDibujo,
     cardColor: 'rosado',
-    eventBg: '/assets/taller-de-dibujo.png'
+    eventBg: '/assets/taller-de-dibujo.png',
   },
   {
     date: '25 de abril',
@@ -413,7 +420,7 @@ export const events = [
     url: 'clases-basket-con-sportage-1',
     icon: ClasesDeBasket,
     cardColor: 'amarillo',
-    eventBg: '/assets/clases-de-basket.png'
+    eventBg: '/assets/clases-de-basket.png',
   },
   {
     date: '25 de abril',
@@ -427,7 +434,7 @@ export const events = [
     url: 'vivir-arte-imaginario-festival',
     icon: TallerDeDibujo,
     cardColor: 'melon',
-    eventBg: '/assets/taller-de-dibujo.png'
+    eventBg: '/assets/taller-de-dibujo.png',
   },
   {
     date: '25 de abril',
@@ -442,7 +449,7 @@ export const events = [
     url: 'taller-alimentacion-huerta-productiva',
     icon: Robotica,
     cardColor: 'verde-oliva',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/fabrica-de-robots.png',
   },
   {
     date: '25 de abril',
@@ -456,7 +463,7 @@ export const events = [
     url: 'taller-de-robotica-1',
     icon: Robotica,
     cardColor: 'verde',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/fabrica-de-robots.png',
   },
   {
     date: '25 de abril',
@@ -471,7 +478,7 @@ export const events = [
     url: 'historias-del-futuro-4',
     icon: HistoriasDelFuturo,
     cardColor: 'rosado',
-    eventBg: '/assets/historias-del-futuro.png'
+    eventBg: '/assets/historias-del-futuro.png',
   },
   {
     date: '25 de abril',
@@ -485,7 +492,7 @@ export const events = [
     url: 'taller-itinerante-fabrica-amigos',
     icon: FabricaDeAmigosImaginarios,
     cardColor: 'amarillo',
-    eventBg: '/assets/fabrica-de-amigos-imaginarios.png'
+    eventBg: '/assets/fabrica-de-amigos-imaginarios.png',
   },
   {
     date: '25 de abril',
@@ -498,9 +505,9 @@ export const events = [
     description: '',
     keyword: 'teatro',
     url: 'sketch-teatral-metro-80',
-    icon: Robotica,
+    icon: SketchTeatralMetro,
     cardColor: 'melon',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/sketch-teatral-metro-80.png',
   },
   {
     date: '25 de abril',
@@ -514,21 +521,21 @@ export const events = [
     url: 'fabrica-amigos-imaginarios',
     icon: FabricaDeAmigosImaginarios,
     cardColor: 'verde-oliva',
-    eventBg: '/assets/fabrica-de-amigos-imaginarios.png'
+    eventBg: '/assets/fabrica-de-amigos-imaginarios.png',
   },
   {
     date: '25 de abril',
     fullDate: '2026-04-25',
     time: '5: 30 p.m',
-    title: 'presentacion red de musica de medellin',
+    title: 'Presentacion red de musica de medellin',
     location: 'plaza Jardin',
     ally: 'Red de musica',
     description: '',
     keyword: 'música',
     url: 'presentacion-red-musica-medellin',
-    icon: Robotica,
+    icon: PresentacionRedMusicaMedellin,
     cardColor: 'verde',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/presentacion-red-musica-medellin.png',
   },
   {
     date: '26 de abril',
@@ -543,7 +550,7 @@ export const events = [
     url: 'caricaturas-familia-en-vivo-2',
     icon: CaricaturasEnFamilia,
     cardColor: 'rosado',
-    eventBg: '/assets/caricaturas-en-familia.png'
+    eventBg: '/assets/caricaturas-en-familia.png',
   },
   {
     date: '26 de abril',
@@ -557,7 +564,7 @@ export const events = [
     url: 'vivir-arte-imaginario-festival-1',
     icon: TallerDeDibujo,
     cardColor: 'amarillo',
-    eventBg: '/assets/taller-de-dibujo.png'
+    eventBg: '/assets/taller-de-dibujo.png',
   },
   {
     date: '26 de abril',
@@ -572,6 +579,6 @@ export const events = [
     url: 'taller-figuras-3d-pintura',
     icon: Robotica,
     cardColor: 'melon',
-    eventBg: '/assets/fabrica-de-robots.png'
+    eventBg: '/assets/fabrica-de-robots.png',
   },
 ]

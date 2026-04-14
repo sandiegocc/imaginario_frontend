@@ -103,6 +103,7 @@ const onSubmit = async (values: any) => {
       method: 'PATCH',
       url: '/imaginario/register-event',
       data: {
+        event: eventId,
         keyword: values.keyword,
       },
     }
