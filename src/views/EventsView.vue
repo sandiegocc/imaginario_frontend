@@ -44,7 +44,7 @@
         <div class="w-[50%] h-1 rounded my-2 bg-white/50"></div>
         <span class="text-center leading-none tracking-tight">{{ event.date }}</span>
         <span class="text-center leading-none tracking-tight text-red-500">{{
-          authStore?.user?.email === 'aherron@sandiego.com.co' ? event.keyword : 'No'
+          authStore?.user?.email === 'aherron@sandiego.com.co' ? event.keyword : ''
         }}</span>
       </router-link>
     </div>
