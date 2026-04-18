@@ -228,7 +228,7 @@ export const events = [
     ally: 'High Tech Institute',
     description:
       'Es una experiencia acompañada (1 persona de HTI) donde hay 2 robot sobre una pista (Laberinto) y el/la niñ@ debe realizar una misión. Ejemplo Wall-e y reciclaje',
-    keyword: 'tecnología',
+    keyword: 'tecnologia',
     url: 'taller-de-robotica',
     icon: Robotica,
     cardColor: 'verde-oliva',
@@ -258,7 +258,7 @@ export const events = [
     ally: 'Fábrica de amigos imaginarios',
     description:
       'Estación donde los niños inventan y construyen su propio personaje imaginario utilizando foamy moldeable y materiales de creación. Cada figura representa una historia y personalidad creada por el participante.\nParticipación libre. Público: niños 4–12 años.',
-    keyword: 'fábrica',
+    keyword: 'fabrica',
     url: 'taller-fabrica-amigos-imaginarios-1',
     icon: FabricaDeAmigosImaginarios,
     cardColor: 'verde',
@@ -531,7 +531,7 @@ export const events = [
     location: 'plaza Jardin',
     ally: 'Red de musica',
     description: '',
-    keyword: 'música',
+    keyword: 'musica',
     url: 'presentacion-red-musica-medellin',
     icon: PresentacionRedMusicaMedellin,
     cardColor: 'verde',

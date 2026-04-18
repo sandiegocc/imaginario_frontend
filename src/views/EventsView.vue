@@ -43,11 +43,16 @@
         <span class="text-center leading-none tracking-tight">{{ event.title }}</span>
         <div class="w-[50%] h-1 rounded my-2 bg-white/50"></div>
         <span class="text-center leading-none tracking-tight">{{ event.date }}</span>
+        <span class="text-center leading-none tracking-tight text-red-500">{{
+          authStore?.user?.email === 'aherron@sandiego.com.co' ? event.keyword : 'No'
+        }}</span>
       </router-link>
     </div>
 
     <div class="flex items-center justify-center my-8">
-      <button class="bg-black text-white px-4 py-2 rounded-xl" @click="logout">Cerrar sesión</button>
+      <button class="bg-black text-white px-4 py-2 rounded-xl" @click="logout">
+        Cerrar sesión
+      </button>
     </div>
   </div>
 </template>
@@ -62,12 +67,19 @@ import api from '@/api/axios.ts'
 const router = useRouter()
 const authStore = useAuthStore()
 
-// Lógica de filtrado: muestra solo eventos de hoy en adelante
 const filteredEvents = computed(() => {
-  const today = new Date().toISOString().split('T')[0] // Formato 2026-04-13
+  // 1. Obtenemos la fecha actual en la zona horaria de Colombia
+  const nowInColombia = new Intl.DateTimeFormat('sv-SE', {
+    timeZone: 'America/Bogota',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(new Date())
 
   return events
-    .filter((event) => event.fullDate >= today)
+    .filter((event) => {
+      return event.fullDate >= nowInColombia
+    })
     .sort((a, b) => a.fullDate.localeCompare(b.fullDate))
 })
 
